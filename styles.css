@@ -1,18 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
 *{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-}
-
-body {
-    background-color: rgb(90, 233, 185);
+    background-color: rgb(133, 249, 210);
 }
 
 /* NAV BAR */
 
+li, a {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    text-decoration: none;
+}
+
+h1 {
+    font-family: "Montserrat";
+    background-color: rgb(204, 251, 235);
+
+}
+
 #header-img {
     max-width: 150px;
     height: 80px;
+    background-color: rgb(204, 251, 235);
 }
 
 .logo {
@@ -20,6 +33,7 @@ body {
     padding: 20px;
     align-items: flex-end;
     justify-content: left;
+    background-color: rgb(204, 251, 235);
 }
 
 #brand-name {
@@ -30,16 +44,28 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding-right: 20px;
-}
+    padding: 15px 10%;
 
-#nav-bar > ul{
-    display: flex;
-    list-style: none;
-    padding-left: 50px;
+    height: 15%;
+    background-color: rgb(204, 251, 235);    
     
 }
 
-#nac-bar > ul > li {
-    padding-left: 15px;
+.nav--links {
+    list-style: none;
+    background-color: rgb(204, 251, 235);
+}
+
+.nav--links li {
+    display: inline-block;
+    color: black;
+    padding: 10px 20px;
+    background-color: rgb(204, 251, 235);
+}
+
+.nav--links li a {
+    color: black;
+    background-color: rgb(204, 251, 235);
+    padding: 10px;
+    
 }

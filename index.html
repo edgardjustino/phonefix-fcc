@@ -7,31 +7,102 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
     <title>Phone Fix</title>
+    <script src="https://kit.fontawesome.com/77167de18c.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
 
-<!-- NAV BAR -->
 
-    <header id="header">
-        <div class="logo">
-            <img src="logo.png" alt="logo" id="header-img">
-            <h1 id="brand-name">Phone Fix</h1>
+
+    <!--        NAV BAR        -->
+    <div class="page-wrapper">
+        <header id="header">
+            <div class="logo">
+                <img src="logo.png" alt="logo" id="header-img">
+                <h1 id="brand-name">Phone Fix</h1>
+            </div>
+            <nav id="nav-bar">
+                <ul class="nav--links">
+                    <li><a class="nav-link" href="#features">Features</a></li>
+
+                    <li><a class="nav-link" href="#how-it-works">How It Works</a></li>
+
+                    <li><a class="nav-link" href="#pricing">Pricing</a></li>
+                </ul>
+            </nav>
+        </header>
+
+
+
+
+        <!--        INPUT        -->
+
+        <section id="hero">
+            <h2>The best place to fix your device</h2>
+            <form action="https://www.freecodecamp.com/email-submit" id="form">
+                <input name="email" type="email" id="email" placeholder="Your E-mail here" required>
+
+                <input type="submit" id="submit" value="Get Started" class="btn">
+
+            </form>
+        </section>
+
+
+
+        <div class="container">
+
+
+            <!--        FEATURES        -->
+            <section id="features">
+                <div class="grid">
+
+                    <div class="icon">
+                        <i class="fa-solid fa-microchip"></i>
+                    </div>
+                    <div class="desc">
+                        <h2>Premium Materiais</h2>
+                        <p>Our source of materials are sucure and asure the longevity of our services.</p>
+                    </div>
+                </div>
+
+                <div class="grid">
+
+                    <div class="icon">
+                        <i class="fa-solid fa-truck-arrow-right"></i>
+                    </div>
+                    <div class="desc">
+                        <h2>Fast Shipping</h2>
+                        <p>We make sure you recieve your cellphone as soon as we have finished repairing it.</p>
+                    </div>
+                </div>
+
+                <div class="grid">
+
+                    <div class="icon">
+                        <i class="fa-solid fa-microchip"></i>
+                    </div>
+                    <div class="desc">
+                        <h2>Quality Assurance</h2>
+                        <p>For every purchase you make, we will ensure there are no damages or faults and we will check and test the pitch of your device.</p>
+                    </div>
+                </div>
+
+            </section>
+
+
+
+            
+            <!--      HOW IT WORKS - VIDEO      -->
+
+            <section id="how-it-works">
+                <iframe id="video" width="560" height="315" src="https://www.youtube.com/embed/CLKf21AqZnc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+            </section>
+
         </div>
-        <nav id="nav-bar">
-            <ul class="nav--links">
-                <li><a class="nav-link" href="#features">Features</a></li>
 
-                <li><a class="nav-link" href="#how-it-works">How It Works</a></li>
-                
-                <li><a class="nav-link" href="#pricing">Pricing</a></li>
-            </ul>
-        </nav>
-    </header>
 
-    <!-- INPUT -->
-    
-
+    </div>
 </body>
 
 </html>

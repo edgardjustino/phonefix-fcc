@@ -172,7 +172,7 @@ form{
     justify-content: center;
     height: 125px;
     width: 20vw;
-    color: rgb(22, 96, 71);;
+    color: rgb(22, 96, 71);
     font-size: 40px;
 }
 
@@ -218,8 +218,33 @@ form{
     border: none;
     width: calc(100%/3);
     margin: 15px;
-    padding: 15px;
+    /* padding: 15px; */
     border-radius: 5px;
     box-shadow: rgba(0, 0, 0, 0.598);
 }
 
+.product > .level {
+    background-color: rgb(22, 96, 71);
+    color: white;
+    width: 100%;
+    padding: 15px;
+    text-transform: uppercase;
+    font-weight: 700;
+    border-radius: 5px 5px 0 0;
+}
+
+.product > h2 {
+    margin-top: 15px;
+}
+
+/* .product > #ul-product{
+    margin: 15px 0;
+} */
+
+/* Coisas que precisam ser acertadas
+a altura das sessões quando aperta na nav
+ 
+o width que fica criando scrool horizontal
+
+caso queira fazer as features ocupar toda a horizontal
+*/

@@ -43,6 +43,13 @@ header {
     z-index: 2;
 }
 
+@media (max-width: 600px) {
+    header {
+        flex-wrap: wrap;
+        padding: 15px;
+    }
+}
+
 #header-img {
     background: transparent;
     height: 70px;
@@ -60,6 +67,22 @@ header {
     justify-content: flex-start;
 }
 
+@media (max-width: 650px) {
+    .logo {
+        margin-top: 15px;
+        width: 100%;
+        position: relative;
+    }
+}
+
+@media (max-width: 650px) {
+    .logo {
+        margin: 0 auto;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
 #brand-name {
     background: transparent;
     padding-left: 10px;
@@ -69,7 +92,19 @@ nav {
     font-weight: 400;
 }
 
-nav > ul {
+@media (max-width: 650px) {
+    nav {
+        margin-top: 10px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 0 50px;
+    }
+}
+
+nav>ul {
     width: 35vw;
     display: flex;
     flex-direction: row;
@@ -77,6 +112,14 @@ nav > ul {
     flex-wrap: wrap;
 }
 
+@media (max-width: 650px) {
+    nav>ul {
+        flex-direction: column;
+    }
+    nav>ul>li {
+        padding-top: 10px;
+    }
+}
 
 /* FORM */
 .btn {
@@ -99,25 +142,28 @@ nav > ul {
     height: 200px;
 }
 
-#hero > h2 {
+#hero>h2 {
     margin-bottom: 20px;
     word-wrap: break-word;
     color: white;
 }
 
-#hero input[type='email']{
-    max-width: 275px;
+#hero input[type='email'] {
+    max-width: 300px;
     width: 100%;
-    padding: 5px;
+    /* padding: 8px; */
+    height: 30px;
+    padding-left: 10px;
     border: none;
     margin-bottom: 10px;
+    border-radius: 2px;
 }
 
-#hero input[type='submit']{
+#hero input[type='submit'] {
     max-width: 150px;
     width: 100%;
     height: 30px;
-    margin: 10px;
+    margin: 3pxpx;
     border: none;
     background-color: whitesmoke;
 }
@@ -126,24 +172,46 @@ nav > ul {
     background-color: rgb(210, 231, 217);
 }
 
-form{
+@media (max-width: 650px) {
+    #hero {
+        margin-top: 120px;
+
+        /* flex-direction: column; */
+    }
+}
+
+@media (max-width: 650px){
+    #hero h2 {
+        text-align: center;
+        padding: 10px;
+    }
+}
+
+form {
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: row;
 }
 
-#email{
+@media (max-width: 550px){
+    form {
+        flex-direction: column;
+        width: 80%;
+    }
+}
+
+#email {
     margin: 10px;
     background-color: whitesmoke;
-    
-    
+
+
 }
 
 
 /* FEATURES */
 .container {
-    max-width: 1000px;
+    /* max-width: 1000px; */
     width: 100%;
     margin: 0 auto;
     position: relative;
@@ -156,15 +224,10 @@ form{
     background-color: whitesmoke;
     color: rgb(22, 96, 71);
     padding: 10px;
-    width: 100%;
-    margin: 15px;
-    border-radius: 15px;
-
+    max-width: 750px;
+    margin: 15px auto;
+    border-radius: 5px;
 }
-
-/* #features {
-    border-radius: 15px;
-}  */
 
 #features .icon {
     display: flex;
@@ -176,6 +239,12 @@ form{
     font-size: 40px;
 }
 
+@media (max-width: 550px) {
+    #features .icon {
+        display: none;
+    }
+}
+
 #features .desc {
     display: flex;
     flex-direction: column;
@@ -183,6 +252,21 @@ form{
     height: 125px;
     width: 80vw;
     padding: 5px;
+}
+
+@media (max-width: 550px){
+    #features .desc{
+        width: 100%;
+        text-align: center;
+        padding: 0;
+        height: 150px;
+    }
+}
+
+@media (max-width: 650px){
+    #features {
+        margin-top: 0;
+    }
 }
 
 /*    VIDEO    */
@@ -194,7 +278,7 @@ form{
     justify-content: center;
 }
 
-#how-it-works > iframe {
+#how-it-works>iframe {
     max-width: 560px;
     width: 100%;
 }
@@ -202,18 +286,18 @@ form{
 
 /*    PRICING    */
 
-#pricing{
+#pricing {
     margin-top: 60px;
     display: flex;
     flex-direction: row;
     justify-content: center;
 }
 
-.product{
+.product {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    /* justify-content: center; */
     text-align: center;
     background-color: whitesmoke;
     border: none;
@@ -224,7 +308,19 @@ form{
     box-shadow: rgba(0, 0, 0, 0.598);
 }
 
-.product > .level {
+@media (max-width:800px){
+    #pricing {
+        flex-direction: column;
+    }
+    .product{
+        max-width: 300px;
+        width: 100%;
+        margin: 0 auto;
+        margin-bottom: 10px;
+    }
+}
+
+.product>.level {
     background-color: rgb(22, 96, 71);
     color: white;
     width: 100%;
@@ -234,19 +330,19 @@ form{
     border-radius: 5px 5px 0 0;
 }
 
-.product > h2 {
+.product>h2 {
     margin-top: 15px;
 }
 
-.product > #ul-product{
+.product>#ul-product {
     margin: 15px 0;
 }
 
-.product > #ul-product > li{
+.product>#ul-product>li {
     padding: 5px 0;
 }
 
-.product > button {
+.product>button {
     border: 0;
     margin: 15px 0;
     background-color: rgb(22, 96, 71);
@@ -255,37 +351,38 @@ form{
     color: whitesmoke;
 }
 
-.product > button:hover {
+.product>button:hover {
     background-color: rgb(27, 112, 84);
     transition: background-color 0.5s;
 
 }
 
 /*      FOOTER      */
-footer{
+footer {
     margin-top: 30px;
     background-color: whitesmoke;
     padding: 20px;
 }
 
-footer > ul {
+footer>ul {
     display: flex;
     justify-content: flex-end;
 }
 
-footer > ul > li {
+footer>ul>li {
     /* padding: 0 10px; */
     padding-left: 20px;
 }
 
-footer > span {
+footer>span {
     margin-top: 5px;
     display: flex;
     justify-content: flex-end;
     font-size: 0.9em;
     color: #444;
+    width: 100%;
 }
-
+/* Consertar o botão do form no media query */
 
 /* Coisas que precisam ser acertadas
 a altura das sessões quando aperta na nav
